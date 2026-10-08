@@ -9,7 +9,7 @@ library(sf)
 library(terra)
 
 #Set working directory
-setwd("//worldpop.files.soton.ac.uk/worldpop/Projects/WP516374_VaxPop/Working/Nigeria_workshop")
+setwd("path-to-directory")
 
 #loading the data
 dat      <- read.csv("Practice_data_outcome.csv", header=TRUE)
