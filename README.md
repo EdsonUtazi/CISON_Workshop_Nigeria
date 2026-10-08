@@ -6,18 +6,21 @@ This workshop provides participants with a practical and conceptually rigorous i
 
 ## Core Topics
 
-Bayesian analysis and approximate Bayesian computation using R-INLA.
-Spatial and spatiotemporal data and modelling frameworks, including geostatistical and areal models.
-Bayesian latent Gaussian models and their implementation using R-INLA and inlabru.
-Practical spatial and spatiotemporal modelling using real-world datasets.
-Static and interactive visualization of model outputs using ggplot2, RShiny and other R packages.
-Learning Objectives
-Describe the key statistical concepts underlying spatial and spatiotemporal models.
-Describe Bayesian inference and approximate Bayesian computation relevant to INLA.
-Distinguish between areal and geostatistical models and identify appropriate applications.
-Develop practical skills in specifying, fitting and evaluating spatial and spatiotemporal models using R-INLA and inlabru.
-Develop skills for producing informative static and interactive visualizations from model outputs.
-Critically interpret model estimates and uncertainty and communicate findings to technical and non-technical audiences.
+- Bayesian analysis and approximate Bayesian computation using R-INLA.
+- Spatial and spatiotemporal data and modelling frameworks, including geostatistical and areal models.
+- Bayesian latent Gaussian models and their implementation using R-INLA and inlabru.
+- Practical spatial and spatiotemporal modelling using real-world datasets.
+- Static and interactive visualization of model outputs using ggplot2, RShiny and other R packages.
+
+
+## Learning Objectives
+
+- Describe the key statistical concepts underlying spatial and spatiotemporal models.
+- Describe Bayesian inference and approximate Bayesian computation relevant to INLA.
+- Distinguish between areal and geostatistical models and identify appropriate applications.
+- Develop practical skills in specifying, fitting and evaluating spatial and spatiotemporal models using R-INLA and inlabru.
+- Develop skills for producing informative static and interactive visualizations from model outputs.
+- Critically interpret model estimates and uncertainty and communicate findings to technical and non-technical audiences.
 
 ## Learning Outcomes
 
