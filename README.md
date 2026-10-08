@@ -1,6 +1,7 @@
 
 # Workshop on Advanced Techniques for Spatial Data Analysis and Interactive Visualization
 
+
 ## Workshop Overview
 This workshop provides participants with a practical and conceptually rigorous introduction to spatial and spatiotemporal modelling, with emphasis on Bayesian latent Gaussian models implemented in R using INLA and inlabru. Short lectures will establish the statistical and mathematical foundations, while hands-on sessions will give participants experience applying the methods to real-world data. The workshop also covers visualization and communication of model outputs.
 
@@ -44,5 +45,5 @@ Primarily statisticians and quantitative researchers with basic training in stat
 - Basic familiarity with Bayesian statistical concepts.
 - No previous knowledge of INLA or inlabru is required.
 
-# Citation
+## Citation
 Utazi, C. E. & Chaudhuri, S. (2026). Advanced techniques for spatial data analysis and interactive visualization: CISON 2026 pre-conference workshop materials [GitHub repository]. GitHub. https://github.com/EdsonUtazi/CISON_Workshop_Nigeria.
