@@ -4,7 +4,8 @@ Workshop on advanced techniques for spatial data analysis and interactive visual
 # Workshop Overview
 This workshop provides participants with a practical and conceptually rigorous introduction to spatial and spatiotemporal modelling, with emphasis on Bayesian latent Gaussian models implemented in R using INLA and inlabru. Short lectures will establish the statistical and mathematical foundations, while hands-on sessions will give participants experience applying the methods to real-world data. The workshop also covers visualization and communication of model outputs.
 
-# Core Topics
+## Core Topics
+
 Bayesian analysis and approximate Bayesian computation using R-INLA.
 Spatial and spatiotemporal data and modelling frameworks, including geostatistical and areal models.
 Bayesian latent Gaussian models and their implementation using R-INLA and inlabru.
@@ -17,21 +18,25 @@ Distinguish between areal and geostatistical models and identify appropriate app
 Develop practical skills in specifying, fitting and evaluating spatial and spatiotemporal models using R-INLA and inlabru.
 Develop skills for producing informative static and interactive visualizations from model outputs.
 Critically interpret model estimates and uncertainty and communicate findings to technical and non-technical audiences.
-Learning Outcomes
+
+## Learning Outcomes
+
 By the end of the workshop, participants will be able to:
 
-Identify and describe common types of spatial and spatiotemporal data.
-Formulate suitable Bayesian spatial or spatiotemporal models for a given research question.
-Fit areal and continuous geostatistical models using R-INLA and inlabru.
-Generate spatial predictions, uncertainty estimates and maps from fitted models.
-Create clear static and interactive visualizations of spatial and spatiotemporal model outputs.
-Interpret spatial patterns and uncertainty and communicate the implications of model findings appropriately.
-Target Audience
-Primarily statisticians and quantitative researchers with basic training in statistics and some awareness of spatial or spatiotemporal data. Relevant fields include public health, epidemiology, ecology, environmental science, econometrics and related disciplines.
+- Identify and describe common types of spatial and spatiotemporal data.
+- Formulate suitable Bayesian spatial or spatiotemporal models for a given research question.
+- Fit areal and continuous geostatistical models using R-INLA and inlabru.
+- Generate spatial predictions, uncertainty estimates and maps from fitted models.
+- Create clear static and interactive visualizations of spatial and spatiotemporal model outputs.
+- Interpret spatial patterns and uncertainty and communicate the implications of model findings appropriately.
+- Target Audience
+- Primarily statisticians and quantitative researchers with basic training in statistics and some awareness of spatial or spatiotemporal data. Relevant fields include public health, epidemiology, ecology, environmental science, econometrics and related disciplines.
 
-Prerequisites / Assumed Knowledge
-Familiarity with R.
-Working knowledge of linear, generalized linear and generalized additive models.
-Basic familiarity with Bayesian statistical concepts.
-No previous knowledge of INLA or inlabru is required.
-Citation
+## Prerequisites / Assumed Knowledge
+
+- Familiarity with R.
+- Working knowledge of linear, generalized linear and generalized additive models.
+- Basic familiarity with Bayesian statistical concepts.
+-No previous knowledge of INLA or inlabru is required.
+
+# Citation
