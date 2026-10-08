@@ -40,3 +40,4 @@ By the end of the workshop, participants will be able to:
 -No previous knowledge of INLA or inlabru is required.
 
 # Citation
+Utazi, C. E. & Chaudhuri, S. (2026). Advanced techniques for spatial data analysis and interactive visualization: CISON 2026 pre-conference workshop materials [GitHub repository]. GitHub. https://github.com/EdsonUtazi/CISON_Workshop_Nigeria.
