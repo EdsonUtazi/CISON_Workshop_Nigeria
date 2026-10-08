@@ -32,15 +32,17 @@ By the end of the workshop, participants will be able to:
 - Generate spatial predictions, uncertainty estimates and maps from fitted models.
 - Create clear static and interactive visualizations of spatial and spatiotemporal model outputs.
 - Interpret spatial patterns and uncertainty and communicate the implications of model findings appropriately.
-- Target Audience
-- Primarily statisticians and quantitative researchers with basic training in statistics and some awareness of spatial or spatiotemporal data. Relevant fields include public health, epidemiology, ecology, environmental science, econometrics and related disciplines.
+
+
+## Target Audience
+Primarily statisticians and quantitative researchers with basic training in statistics and some awareness of spatial or spatiotemporal data. Relevant fields include public health, epidemiology, ecology, environmental science, econometrics and related disciplines.
 
 ## Prerequisites / Assumed Knowledge
 
 - Familiarity with R.
 - Working knowledge of linear, generalized linear and generalized additive models.
 - Basic familiarity with Bayesian statistical concepts.
--No previous knowledge of INLA or inlabru is required.
+- No previous knowledge of INLA or inlabru is required.
 
 # Citation
 Utazi, C. E. & Chaudhuri, S. (2026). Advanced techniques for spatial data analysis and interactive visualization: CISON 2026 pre-conference workshop materials [GitHub repository]. GitHub. https://github.com/EdsonUtazi/CISON_Workshop_Nigeria.
