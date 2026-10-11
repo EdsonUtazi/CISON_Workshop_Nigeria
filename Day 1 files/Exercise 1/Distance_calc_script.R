@@ -8,27 +8,26 @@ library(gstat)
 library(sf)
 library(terra)
 
+options(scipen=999) #make R prefer displaying numbers in standard decimal notation.
+
 #Set working directory
 setwd("path_to_directory")
 
 #loading the data
 dat      <- read.csv("Practice_data_outcome.csv", header=TRUE)
-dat.cov  <- read.csv("Covariates_selected.csv", header=TRUE)
+head(dat)
 
-data.merge <- merge(dat, dat.cov[,1:11], by="ID")
-coords <- data.frame(LONGNUM = data.merge$LONGNUM, LATNUM = data.merge$LATNUM)
+coords <- data.frame(LONGNUM = dat$LONGNUM, LATNUM = dat$LATNUM)
+coords <- na.omit(coords) #Remove rows with missing coordinates
 
-#####Some distance calculations - Place first
-
-#Euclidean distances in degrees. To convert to km, multiply by 111. 
-#This is because 1 degree longitude = 111.32 km at the equator
-#(the equator is divided into 360 degrees of longitude).
+#Euclidean distances in decimal degrees. To convert to km, multiply by 111. 
+#1 degree longitude = 111.32 km at the equator
 #However, as you move towards the poles, this distance decreases.
-hh <- dist(coords)
-dist1 <- as.numeric(dist(coords)*111)
+hh <- dist(coords) #matrix of distances between pairs of locations in the data
+dim(hh) 
+dist1 <- as.numeric(dist(coords)*111) #convert to a vector
 summary(dist1)
-max.dist <- max(dist(coords))  
-min.dist <- min(dist(coords))
+
 
 ##Great circle or spherical distance or geodetic distance in meters, 
 #geosphere package. Divide by 1000 to convert to km.
@@ -38,15 +37,15 @@ dist2 <- as.numeric(dd[lower.tri(dd, diag = FALSE)])/1000
 summary(dist2)
 
 
-#The Earth's shape is often approximated using an oblate ellipsoid model that bulges at the equator and flattens at
-#the poles. The most common ellipsoid is the World Geodetic System (WGS84) used by GPS devices. 
-#A coordinate reference system (CRS) specifies how coordinates are related to locations on the Earth.
-
 #Convert the distances from lon-lat to UTM coordinates
 
-# Create spatial points from longitude and latitude
-SP_longlat <- st_as_sf(data.merge, coords = c("LONGNUM", "LATNUM"), crs = 4326)
-#EPSG:4326 is the the standard identifier for the WGS 84 CRS
+# Convert the data (coords) to an sf object
+SP_longlat <- st_as_sf(coords, coords = c("LONGNUM", "LATNUM"), crs = 4326)
+#EPSG:4326 identifies the WGS 84 geographic CRS, which uses latitude and 
+#longitude coordinates in degrees
+#EPSG is a defunct organization that originally developed a registry of codes 
+#identifying coordinate reference systems (CRSs)
+
 
 # Transform to UTM Zone 32N
 SP_UTM <- st_transform(SP_longlat, crs = 32632) #Nigeria is in UTM zone 32N.
@@ -76,3 +75,4 @@ par(mfrow=c(1,3))
 plot(st_coordinates(SP_longlat), main = "lon-lat")
 plot(st_coordinates(SP_UTM), main = "UTM")
 ###################################################################################
+
