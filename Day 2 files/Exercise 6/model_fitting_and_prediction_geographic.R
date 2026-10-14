@@ -54,7 +54,7 @@ data.merge <- data.merge %>%
 
 #Convert data.merge to an sf object
 data.merge <- st_as_sf(data.merge, coords = c("LONGNUM", "LATNUM"), 
-                       crs = epsg)
+                       crs = 4326)
 
 
 #meshfit: fine triangulated mesh
